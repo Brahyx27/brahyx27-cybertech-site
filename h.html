@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brahyx27 CyberTech | Siber Güvenlik Kaynakları</title>
+    <style>
+        /*
+        ========================================
+        CSS STYLES (Görünüm ve Akıcılık)
+        ========================================
+        */
+        :root {
+            --primary-color: #00bcd4; /* Turkuaz */
+            --secondary-color: #00e676; /* Yeşil */
+            --background-color: #1a1a1a; /* Koyu Gri/Siyah */
+            --text-color: #f0f0f0;
+            --card-bg: #2c2c2c;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Başlık ve Menü */
+        header {
+            background: #111;
+            padding: 20px 5%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Ana İçerik ve Bölümler */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* Hero Section - Giriş Bölümü */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://picsum.photos/1200/400?random=1') no-repeat center center/cover; /* Placeholder resim */
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.8em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto 20px;
+        }
+
+        /* Kartlar ve Alanlar */
+        .area-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .area-card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .area-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .area-card h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        /* Mobil Uyum */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 15px;
+            }
+            nav {
+                margin-top: 10px;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Brahyx27 CyberTech</div>
+        <nav>
+            <a href="#osint">OSINT</a>
+            <a href="#phishing">Phishing</a>
+            <a href="#vulnerability">Zafiyet</a>
+            <a href="#database">Veritabanı</a>
+            <a href="#more">Daha Fazlası</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section class="hero">
+            <h1>Siber Bilgiye Erişim Noktanız</h1>
+            <p>Siber güvenlik dünyasının temel kavramlarını, araçlarını ve savunma yöntemlerini öğrenin. Bilgi güvendir.</p>
+        </section>
+
+        <section id="areas" class="area-grid">
+            
+            <div id="osint" class="area-card">
+                <h3>🔍 OSINT (Açık Kaynak İstihbaratı)</h3>
+                <p>OSINT, herkese açık kaynaklardan (internet, sosyal medya, kamu kayıtları vb.) bilgi toplama yöntemidir. Etik hackerlar bu tekniği hedef sistem hakkında bilgi edinmek için, savunmacılar ise kendi dijital ayak izlerini anlamak için kullanır.</p>
+                
+                <p><strong>Öne Çıkan Kavramlar:</strong> Google Dorking, Pasif Keşif, Dijital Ayak İzi Analizi.</p>
+            </div>
+
+            <div id="phishing" class="area-card">
+                <h3>🎣 Phishing ve Sosyal Mühendislik</h3>
+                <p>Phishing, kullanıcıları kandırarak hassas bilgileri (şifreler, kredi kartı bilgileri) ele geçirme girişimidir. Buradaki ana odak noktamız, bu saldırıların nasıl tanınacağı ve bunlara karşı nasıl bir savunma hattı oluşturulacağıdır.</p>
+                
+                <p><strong>Öne Çıkan Kavramlar:</strong> Spear Phishing, Kimlik Avı Türleri, Güvenlik Farkındalığı Eğitimi.</p>
+            </div>
+
+            <div id="vulnerability" class="area-card">
+                <h3>🛡️ Zafiyet Analizi ve Taraması</h3>
+                <p>Sistemlerde, ağlarda ve uygulamalarda var olan güvenlik açıklarını (zafiyetleri) tespit etme sürecidir. Amaç, kötü niyetli bir saldırgan bulmadan önce bu açıkları kapatmaktır. **SQLmap** gibi araçlar, belirli zafiyet türlerini test etmek için kullanılır.</p>
+                
+                <p><strong>Öne Çıkan Kavramlar:</strong> CVSS Puanlaması, Sızma Testi Aşamaları, Nessus kullanımı.</p>
+            </div>
+
+            <div id="database" class="area-card">
+                <h3>🔗 Veritabanı Güvenliği (Örn: SQL Injection Önleme)</h3>
+                <p>Veritabanı açıkları, uygulamanızın kalbine ulaşmak için kullanılır. Özellikle **SQL Injection (SQL Enjeksiyonu)** en yaygın olanlardan biridir. Kaynaklarımız, bu tür zafiyetlerin nasıl oluştuğunu ve **hazırlanmış sorgular (prepared statements)** gibi savunma tekniklerini anlatır.</p>
+                
+                <p><strong>Öne Çıkan Kavramlar:</strong> Güvenli Kodlama Pratikleri, Parameterizasyon, En Az Yetki Prensibi.</p>
+            </div>
+
+            <div id="more" class="area-card">
+                <h3>💻 Daha Fazla Siber Kaynak</h3>
+                <p>Diğer önemli siber güvenlik alanları hakkında bilgi edinin. Bu alanlar; şifreleme, ağ güvenliği, siber tehdit istihbaratı (CTI) ve tersine mühendisliği içerir.</p>
+                
+                <p><strong>Öne Çıkan Kavramlar:</strong> Kriptografi, WAF (Web Uygulama Güvenlik Duvarı), Log Analizi.</p>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2025 Brahyx27 CyberTech | Tüm Hakları Saklıdır. Eğitim ve Farkındalık Amaçlıdır.
+    </footer>
+
+    <script>
+        /*
+        ========================================
+        JAVASCRIPT (Akıcılık ve Etkileşim)
+        ========================================
+        */
+
+        // Menüdeki bağlantılara yumuşak kaydırma (smooth scroll) ekler
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // İsteğe bağlı: Sayfa yüklendiğinde hafif bir animasyon ekler
+        document.addEventListener('DOMContentLoaded', () => {
+            const hero = document.querySelector('.hero');
+            setTimeout(() => {
+                hero.style.opacity = '1';
+                hero.style.transform = 'translateY(0)';
+            }, 300);
+        });
+        
+        // CSS'te opacity ve transform tanımlaması gerekebilir
+    </script>
+
+</body>
+</html>
